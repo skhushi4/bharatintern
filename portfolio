@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Khushi Sharma - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #000;
+        }
+
+        header {
+            text-align: center;
+            background-color: #2196F3;
+            color: #000;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: dark blue;
+            padding: 10px;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            font-size: 19px;
+        }
+
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* About Section Styles */
+        #about-section {
+            background-color: #f0f0f0;
+        }
+
+        #about-content {
+            color: #333; 
+        }
+
+        /* Projects Section Styles */
+        #projects-section {
+            background-color: #f5f5f5; 
+        }
+
+        #projects-content {
+            color: #444; 
+        }
+
+        /* Contact Section Styles */
+        #contact-section {
+            background-color: #f0f0f0; 
+        }
+
+        #contact-content {
+            color: #333; 
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .slide-content {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2196F3;
+            padding: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Khushi Sharma</h1>
+        <p>Computer Science Student | Aspiring Software and Web Developer </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about-section">
+        <h2>About Me</h2>
+        <div id="about-content" class="slide-content">
+            <p>
+                👋 I am Khushi Sharma, a dedicated Computer Science student currently pursuing my B.Tech in computer science engineering from Banasthali Vidyapeth.
+            </p>
+            <p>
+                🚀 As an aspiring developer with an unquenchable thirst for knowledge, I've delved into the fascinating world of programming languages, honing my skills in C, C++, Java, HTML, CSS, and more.
+            </p>
+            <p>
+                📚 My passion for learning and exploring the endless possibilities of software engineering keeps me engaged and curious about the latest industry trends and emerging technologies.
+            </p>
+            <p>
+                🌐 As I continue to evolve as a tech enthusiast, I'm excited to collaborate on innovative projects that make a positive impact on people's lives, leveraging my skills to build digital solutions that matter.
+            </p>
+            <p>
+                💻 Beyond my coding escapades, I enjoy staying connected with the vibrant tech community, attending hackathons, and immersing myself in the ever-evolving tech ecosystem.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects-section">
+        <h2>Projects</h2>
+        <div id="projects-content" class="slide-content">
+            <div class="project">
+                <h3>E-commerce Website: Handloom Businesses in India</h3>
+                <p>
+                    The web portal was made using HTML and CSS, my team & I created this project to increase the authenticity of Indian culture in today's world and to imbark the uniqueness of handloom products.
+                </p>
+                <h3>Temperature Converter: 🌡️ Cool Conversions at Your Fingertips!</h3>
+                <p>
+                    Stay cool with my Temperature Converter! Built with HTML, CSS, and a touch of JavaScript, it instantly transforms Celsius, Fahrenheit, and Kelvin scales. 🌡️ No more mental math, just effortless temperature conversions! This project boosted my JavaScript prowess and DOM skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h2>Contact</h2>
+        <div id="contact-content" class="slide-content">
+            <p>
+                📧 Let's connect and explore the possibilities of shaping the digital future together! Feel free to reach me at <a href="mailto:skhushi42003@gmail.com">skhushi42003@gmail.com</a>.
+            </p>
+            <p>
+                🌐 Check out my GitHub: <a href="https://github.com/skhushi4">github.com/snow369</a>
+            </p>
+            <p>
+                🔗 Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/khushi-sharma-512668230" target="_blank">linkedin.com/in/SnehaKumari</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Khushi Sharma. All rights reserved.</p>
+    </footer>
+</body>
+</html>
