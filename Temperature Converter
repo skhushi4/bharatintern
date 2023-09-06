@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: yellow; /* Changed background color to yellow */
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .output-container {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="input-container">
+            <input type="number" id="inputTemp" placeholder="Enter temperature">
+            <select id="inputUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <button id="convertButton">Convert</button>
+        <div class="output-container">
+            <p>Converted Temperature: <span id="outputTemp"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const convertButton = document.getElementById("convertButton");
+            convertButton.addEventListener("click", convertTemperature);
+
+            function convertTemperature() {
+                const inputTemp = parseFloat(document.getElementById("inputTemp").value);
+                const inputUnit = document.getElementById("inputUnit").value;
+                let outputTemp = 0;
+
+                if (inputUnit === "celsius") {
+                    outputTemp = (inputTemp * 9/5) + 32;
+                } else if (inputUnit === "fahrenheit") {
+                    outputTemp = (inputTemp - 32) * 5/9;
+                }
+
+                document.getElementById("outputTemp").textContent = outputTemp.toFixed(2);
+            }
+        });
+    </script>
+</body>
+</html>
